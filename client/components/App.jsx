@@ -28,9 +28,9 @@ class App extends React.Component {
       alert('You did not fill out the form completely, please try again!');
     } else {
       axios.post('/hours', {
-        date: 'August 2',
-        arrived: '9am',
-        left: '10pm',
+        date: this.state.date,
+        arrived: this.state.arrived,
+        left: this.state.left,
       })
       .then( response => {
         console.log(response);

@@ -34,9 +34,9 @@ app.get('/hours', function(req,res) {
 //handles post requests
 app.post('/hours', function(req, res) {
   let hours = new Hours ({
-    date: 'July 31',
-    arrived: '8:30am',
-    left: '11:00pm'
+    date: req.body.date,
+    arrived: req.body.arrived,
+    left: req.body.left
   })
   hours.save( function(err, data) {
     if(err) {
