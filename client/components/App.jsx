@@ -14,6 +14,7 @@ class App extends React.Component {
       left: '',
     };
     this.handleInputPost = this.handleInputPost.bind(this);
+    this.handleClickPost = this.handleClickPost.bind(this);
   }
 
   handleInputPost(input, type) {
@@ -21,8 +22,26 @@ class App extends React.Component {
     this.setState({[type]: element});
   }
   
-  handleClickPost() {
-
+  handleClickPost(e) {
+    e.preventDefault();
+    if(this.state.date === '' || this.state.arrived === '' || this.state.left === '') {
+      alert('You did not fill out the form completely, please try again!');
+    } else {
+      axios.post('/hours', {
+        date: 'August 2',
+        arrived: '9am',
+        left: '10pm',
+      })
+      .then( response => {
+        console.log(response);
+        alert('Hours successfully submitted!');
+      })
+      .catch(error => {
+        console.log(error);
+        alert('There was an error submitting your hours');
+      })
+      document.getElementById('form-post').reset();
+    }
   }
 
   render() {
@@ -30,7 +49,7 @@ class App extends React.Component {
       <div>
         <h1>Hack Reactor Hours</h1>
         <div>
-          <Post handleInputPost={this.handleInputPost}/>
+          <Post handleInputPost={this.handleInputPost} handleClickPost={this.handleClickPost}/>
         </div>
         <div>
           <Search />
