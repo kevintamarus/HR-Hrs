@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Search extends React.Component {
+class Calculate extends React.Component {
   constructor(props) {
     super(props);
 
@@ -11,10 +11,10 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <h2>Search Your Hours Here:</h2>
+        <h2>Calculate Here:</h2>
       </div>
     );
   }
 }
 
-export default Search;
+export default Calculate;
