@@ -165,7 +165,7 @@ class App extends React.Component {
   }
 
   hrsPerWeek(data) {
-    let hours = ((this.totalHours(data)/data.length) * 6);
+    let hours = Math.ceil((this.totalHours(data)/data.length) * 6);
     let expression = `You spent on average ${hours} hours per week at Hack Reactor!!!`;
     if(hours > 75) {
       return expression + ' YOU HAVE NO LIFE!!!!!!!!!';
