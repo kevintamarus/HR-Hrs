@@ -9,9 +9,10 @@ class Calculate extends React.Component {
     }
   }
   render() {
+    let imageURL = './shawnDrost.jpg';
     return (
       <div>
-        <h2>Calculate Here:</h2>
+        <h2>Calculate Your Hours:</h2>
         <div>
           <select onChange={(input) => this.props.handleCalculateType(input)}>
             <option value="total">Total Hours at Hack Reactor</option>
@@ -19,7 +20,7 @@ class Calculate extends React.Component {
           </select>
           <button onClick={this.props.handleClickCalculate}>Calculate</button>
         </div>
-        <div className="calculate-display">{this.props.display}</div>
+        <div className="display-calculate">{this.props.display}</div>
       </div>
 
     );

@@ -177,14 +177,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Hack Reactor Hours</h1>
-        <div>
+        <h1 id="title">Hack Reactor Hours</h1>
+        <div id="calculate">
           <Calculate handleCalculateType={this.handleCalculateType} handleClickCalculate={this.handleClickCalculate} display={this.state.display}/>
         </div>
-        <div>
+        <div id="post">
           <Post handleInputPost={this.handleInputPost} handleClickPost={this.handleClickPost}/>
         </div>
-        <div>
+        <div id="search">
           <Search handleInputSearch={this.handleInputSearch} handleClickSearch={this.handleClickSearch} handleSearchType={this.handleSearchType} info={this.state.info}/>
         </div>
       </div>
