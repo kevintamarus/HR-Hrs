@@ -13,6 +13,7 @@ class Search extends React.Component {
     return (
       <div>
         <h2>Search Database:</h2>
+        <img src="http://www.reactiongifs.com/r/ktpng.gif"/>
         <div>
           <select onChange={(input) => this.props.handleSearchType(input)}>
             <option value="all">Give Me All The Data</option>
