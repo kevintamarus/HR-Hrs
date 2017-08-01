@@ -15,7 +15,7 @@ class Search extends React.Component {
         <h2>Search Database:</h2>
         <div>
           <select onChange={(input) => this.props.handleSearchType(input)}>
-            <option value="all">Select All</option>
+            <option value="all">Give Me All The Data</option>
             <option value="date">By Date</option>
             <option value="less">Hours Spent Less Than</option>
             <option value="more">Hours Spent More Than</option>

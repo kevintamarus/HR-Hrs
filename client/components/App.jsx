@@ -83,13 +83,14 @@ class App extends React.Component {
         alert('There was an error submitting your hours');
       })
       document.getElementById('form-post').reset();
+      this.setState({date: ''});
+      this.setState({date: ''});
+      this.setState({date: ''});
     }
   }
 
   handleClickSearch(input) {
     input.preventDefault();
-    console.log(this.state.searchType, this.state.searchValue)
-    console.log('function result: ', this.timeDifference('8:30am', '11:30pm'));
     if(this.state.searchValue === '' && this.state.searchType !== 'all') {
       alert('You did not fill out the search box, please try again!');
     } else {
