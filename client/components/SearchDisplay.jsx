@@ -17,7 +17,7 @@ class DisplayDiv extends React.Component {
 
   render() {
     let style = {
-      color: this.state.change ? '#2E8B57' : '#191970',
+      color: this.state.change ? '#003333' : '#191970',
       fontWeight: this.state.change ? 'bold' : 'normal',
       fontSize: this.state.change ? '125%' : '100%'
     }

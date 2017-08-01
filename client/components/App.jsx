@@ -84,8 +84,8 @@ class App extends React.Component {
       })
       document.getElementById('form-post').reset();
       this.setState({date: ''});
-      this.setState({date: ''});
-      this.setState({date: ''});
+      this.setState({arrived: ''});
+      this.setState({left: ''});
     }
   }
 

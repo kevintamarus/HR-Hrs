@@ -16,10 +16,10 @@ class Search extends React.Component {
         <img src="http://www.reactiongifs.com/r/ktpng.gif"/>
         <div>
           <select onChange={(input) => this.props.handleSearchType(input)}>
-            <option value="all">Give Me All The Data</option>
+            <option value="all">Pull All Exisiting Entries</option>
             <option value="date">By Date</option>
-            <option value="less">Hours Spent Less Than</option>
-            <option value="more">Hours Spent More Than</option>
+            <option value="less">By Hours Spent Less Than</option>
+            <option value="more">By Hours Spent More Than</option>
           </select>
           <input type="text" onChange={(input) => this.props.handleInputSearch(input)}/>
           <button onClick={this.props.handleClickSearch}>Search</button>
