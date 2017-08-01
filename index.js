@@ -18,11 +18,11 @@ mongoose.connect(mongoLink);
 //exported model
 const Hours = require('./db/models/hours');
 
-//handles get requests
-app.get('/hours', function(req,res) {
+//handles GET requests
+app.get('/hours', function(req, res) {
   Hours.find({})
   .then(function(data) {
-    res.send(data);
+    res.send(JSON.stringify(data));
     console.log('sucessfully retrieved data');
   })
   .catch(function(err) {
@@ -31,7 +31,7 @@ app.get('/hours', function(req,res) {
   })
 })
 
-//handles post requests
+//handles POST requests
 app.post('/hours', function(req, res) {
   let hours = new Hours ({
     date: req.body.date,
