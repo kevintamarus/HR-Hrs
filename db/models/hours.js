@@ -11,7 +11,7 @@ const hoursSchema = new Schema({
 const Hours = mongoose.model('hours', hoursSchema);
 
 Hours.remove({}, function(err) {
-  console.log('trying to delete data')
+  console.log('trying to delete data');
   if(err) {
     console.log('did not delete data');
   }

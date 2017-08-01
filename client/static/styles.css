@@ -2,3 +2,7 @@ body {
   background-color: skyblue;
   text-align: center;
 }
+
+.display-span {
+  margin: 10px;
+}
