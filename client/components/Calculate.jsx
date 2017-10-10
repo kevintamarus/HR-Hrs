@@ -13,7 +13,9 @@ class Calculate extends React.Component {
     return (
       <div>
         <h2>Calculate Your Hours:</h2>
+        <a href="http://www.hackreactor.com">
         <img src="ShawnDrostMeme.png" alt="ShawnDrostMeme.png"/>
+        </a>
         <div>
           <select onChange={(input) => this.props.handleCalculateType(input)}>
             <option value="total">Total Hours at Hack Reactor</option>

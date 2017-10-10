@@ -13,7 +13,9 @@ class Search extends React.Component {
     return (
       <div>
         <h2>Search Database:</h2>
-        <img src="http://www.reactiongifs.com/r/ktpng.gif"/>
+        <a href="http://i.imgur.com/0DQQTAv.mp4">
+          <img src="http://www.reactiongifs.com/r/ktpng.gif"/>
+        </a>
         <div>
           <select onChange={(input) => this.props.handleSearchType(input)}>
             <option value="all">Pull All Exisiting Entries</option>

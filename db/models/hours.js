@@ -22,5 +22,5 @@ Hours.create(log, function(err, results) {
   } else {
     console.log('seeding successful');
   }
-})
+});
 module.exports = Hours;

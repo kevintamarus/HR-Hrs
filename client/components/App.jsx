@@ -177,7 +177,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 id="title">Hack Reactor Hours</h1>
+        <h1 id="title">HR Hrs</h1>
         <div id="calculate">
           <Calculate handleCalculateType={this.handleCalculateType} handleClickCalculate={this.handleClickCalculate} display={this.state.display}/>
         </div>
